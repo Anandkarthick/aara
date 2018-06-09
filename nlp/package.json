@@ -1,0 +1,29 @@
+{
+  "name": "nlp_stuff",
+  "version": "1.0.0",
+  "description": "Portal for JS and Python scripts for NLP apps.. ",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"Dummy value for testing..\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anandkarthick/javscript.git"
+  },
+  "keywords": [
+    "javascript",
+    "NLP"
+  ],
+  "author": "anandk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anandkarthick/javscript/issues"
+  },
+  "homepage": "https://github.com/Anandkarthick/javscript#readme"
+}
+
