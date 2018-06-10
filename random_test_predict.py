@@ -2,7 +2,7 @@
 # Multinomial NB classifer
 import random_predict as rp
 
-phrase = "What's your name"
+phrase = input("Enter the your question.. : ")
 
 result = rp.random_predict(phrase)
 
