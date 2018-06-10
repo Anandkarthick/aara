@@ -1,4 +1,4 @@
-class model_train(object):
+class random_train(object):
 
     def selection(self):
         print(self.ft_name, "Feature selected")
@@ -22,7 +22,7 @@ class model_train(object):
         import warnings
         from sklearn.feature_extraction.text import CountVectorizer
         from sklearn.feature_extraction.text import TfidfTransformer
-        from sklearn.naive_bayes import MultinomialNB
+        from sklearn.ensemble import RandomForestClassifier
         import pickle   
         import os
 
@@ -45,15 +45,15 @@ class model_train(object):
 
         print("Fitting the model.. Multinomial NB")
 
-        clf = MultinomialNB()
+        clf = RandomForestClassifier()
         clf.fit(X_train_weight, Ytrain_df)
 
         print("Model trained.. Let's pickle the model in and see some metrics.")
 
-        filename = 'model_loc/multiNB_countvec.pkl'
+        filename = 'model_loc/randomf_countvec.pkl'
         pickle.dump(count_vect, open(filename, 'wb'))
 
-        filename = 'model_loc/multiNB.pkl'
+        filename = 'model_loc/randomf.pkl'
         pickle.dump(clf, open(filename, 'wb'))
         '''
         with open('model_loc/multiNB.pkl','wb') as f:

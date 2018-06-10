@@ -20,7 +20,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(tr)
 
-print(X_train_tfidf)'''
+print(X_train_tfidf)
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -35,5 +35,14 @@ y_data = cv.transform(phrase)
 
 print(y_data)
 
-print(s.predict(y_data))
+print(s.predict(y_data))'''
 
+import pickle
+from sklearn.feature_extraction.text import CountVectorizer
+
+phrase = 'send my car auto policy document?'
+
+count_vec = CountVectorizer(stop_words='english')
+vec = count_vec.build_tokenizer()
+
+print(count_vec.build_tokenizer()(phrase))
