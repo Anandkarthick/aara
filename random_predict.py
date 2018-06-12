@@ -10,6 +10,8 @@ class random_predict(object):
         filename = 'model_loc/randomf_countvec.pkl'
         cv=pickle.load(open(filename, 'rb'))
         
+        print(xtest_ph)
+        
         y_data = cv.transform([xtest_ph])
         s=pickle.load(open('model_loc/randomf.pkl','rb'))
 
