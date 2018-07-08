@@ -31,6 +31,7 @@ class model_train(object):
         count_vect = CountVectorizer(stop_words='english')
         print("Count Vector process started.. ")
         X_train_count = count_vect.fit_transform(Xtrain_df)
+        print(count_vect.inverse_transform(X_train_count))
         print("\n Count Vector process completed.. ")
 
         tfitd_weight = TfidfTransformer()
@@ -55,9 +56,6 @@ class model_train(object):
 
         filename = 'model_loc/multiNB.pkl'
         pickle.dump(clf, open(filename, 'wb'))
-        '''
-        with open('model_loc/multiNB.pkl','wb') as f:
-                pickle.dump(clf,f) '''
 
         print("model saved..")
 

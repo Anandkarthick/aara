@@ -1,6 +1,10 @@
 class model_predict(object):
 
+    def return_intent(self):
+        return self.intent
+    
     def __init__(self, Xtest_data):
+        self.intent = " "
         self.predict(Xtest_data)
 
     def predict(self, xtest_ph):
@@ -19,7 +23,9 @@ class model_predict(object):
         
         print(s.predict_log_proba(y_data))
         
+        self.intent = result
         print(result)
 
         print(sprob)
+    
 
