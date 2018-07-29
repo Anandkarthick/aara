@@ -39,3 +39,16 @@ clf = linear_model.SGDClassifier()
 clf.fit(X_train,Y_train)
 
 '''
+TRAIN_DATA = [('send my car id card',{ 'entities': [(12, 19, 'IDENTITY DOCUMENT')]})
+('send my car insurance identity card', { 'entities': [(12, 35, 'IDENTITY DOCUMENT') , (12, 21, 'INSURANCE')]})
+('send my auto id card', { 'entities': [(13, 20, 'IDENTITY DOCUMENT')]})
+('send my auto identity card', { 'entities': [(13, 26, 'IDENTITY DOCUMENT')]})
+('send my auto insurance card', { 'entities': [(13, 27, 'IDENTITY DOCUMENT') , (13, 22, 'INSURANCE')]})
+('send auto insurance card', { 'entities': [(10, 24, 'IDENTITY DOCUMENT') , (10, 19, 'INSURANCE')]})
+('mail my auto insurance identity card', { 'entities': [(13, 36, 'IDENTITY DOCUMENT') , (13, 22, 'INSURANCE')]})
+('mail my auto insurance card', { 'entities': [(13, 27, 'IDENTITY DOCUMENT') , (13, 22, 'INSURANCE')]})
+('mail my car insurance id card', { 'entities': [(12, 29, 'IDENTITY DOCUMENT') , (12, 21, 'INSURANCE')]})
+('send my home id card', { 'entities': [(13, 20, 'IDENTITY DOCUMENT')]})
+('send my home identity card	', { 'entities': [(13, 26, 'IDENTITY DOCUMENT')]})
+('send my home insurance card', { 'entities': [(13, 27, 'IDENTITY DOCUMENT') , (13, 22, 'INSURANCE')]})
+('send my insurance card', { 'entities':	[(8, 22, 'IDENTITY DOCUMENT') , (8, 17, 'INSURANCE')]})]

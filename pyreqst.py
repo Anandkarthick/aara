@@ -29,5 +29,4 @@ print(resp)
 res_name = resp['name']
 #res_address = resp['formatted Address']
 
-
 print(res_name)
